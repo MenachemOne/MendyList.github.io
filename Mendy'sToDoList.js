@@ -23,16 +23,21 @@ function myFunction() {
     var item = document.createTextNode(input);
     list.appendChild(item);
     ul.appendChild(list);
-    document.getElementById("myDIV").appendChild(ul);
+    document.getElementById("mainPage").appendChild(ul);
     document.getElementById("myInput").value = "";
 
     //    var delItem = document.createElement("delItem");
     //    delItem.appendChild("li");
     var btn = document.createElement("button");
     btn.innerHTML = "X";
-
     document.body.appendChild(btn);
 
+    btn.onclick = function () {
+      list.parentNode.removeChild(list);
+      //list.style.removeProperty("li");
+      list.style.removeProperty("background-color");
+      btn.parentNode.removeChild(btn);
+    };
     ul.onclick = function (event) {
       console.log(event.target);
       console.log(event.target.style.textDecoration);
@@ -47,5 +52,3 @@ function myFunction() {
     alert("Please enter a value");
   }
 }
-
-function delItem(li) {}
