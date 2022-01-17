@@ -1,0 +1,26 @@
+{
+  "name": "mendy'stodolist",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000M\u0000e\u0000n\u0000d\u0000y\u0000s\u0000T\u0000o\u0000D\u0000o\u0000L\u0000i\u0000s\u0000t\u0000\r\u0000 \u0000",
+  "main": "Mendy'sToDoList.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MenachemOne/MendysToDoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MenachemOne/MendysToDoList/issues"
+  },
+  "homepage": "https://github.com/MenachemOne/MendysToDoList#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6",
+    "nodemon": "^2.0.15"
+  }
+}
